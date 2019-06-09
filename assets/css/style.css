@@ -205,7 +205,81 @@ a:hover {
 .lr:hover{
     border-bottom: none
 }
-@media  (max-width: 1100px){
+.section-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -115px;
+   
+}
+.section-div::before {
+    content: '';
+    height: calc(100vh - 70vh);
+    display: block; 
+    position: absolute;
+    top: 102%;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    background: #F5FAFC;
+    opacity: 0.6;
+    z-index: -1;
+   
+}
+.section-h2{
+    color: #6CB43F;
+    font-size: 30px;
+}
+.section-p, .section-p2{
+    color: #798296;
+    margin-left: -70px;
+    font-size: 14px;
+}
+.section-p{
+    margin-top: -5px;
+}
+.svg{
+    margin-top: -25px;
+    margin-left: 100px;
+}
+.section-p2{
+    margin-top: 20px;
+}
+.client-h3{
+    margin-top: 165px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:  #6CB43F;
+    text-align: center;
+
+}
+.client-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-ul{
+    margin-top: 80px;
+    box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.1);
+    padding-top: 25px;
+    padding-right: 55px;
+    padding-bottom: 24px;
+    padding-left: 55px;
+}
+.paragraf{
+    text-align: center;
+    color: #00718E;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.leftright2{
+    position: absolute;
+    display: flex;  
+    margin-left: 537px;
+    margin-top: 50px;
+}
+@media  (max-width:700px){
 
     body{
        max-width: none;
@@ -282,6 +356,31 @@ a:hover {
     .leftright{
         right: 6px;
     }
+    .search-mobile,.bar{
+        display: inline;
+    }
+    .section-div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .section-p, .section-p2, .section-h2{
+        margin-left: 3%;
+        text-align: center;
+    }
+    .section-h2{
+        margin-bottom: 40px;
+    }
+
+    .svg{
+        display: none;
+    }
+    }
+    .client-div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 
@@ -290,80 +389,7 @@ a:hover {
 
 /*----------------------  hero  ------------------------*/
 /*
-.section-div{
-    display: flex;
-    justify-content: space-between;
-    margin-top: -115px;
-   
-}
-.section-div::before {
-    content: '';
-    height: calc(100vh - 70vh);
-    display: block; 
-    position: absolute;
-    top: 102%;
-    bottom: 0;
-    left: 0; 
-    right: 0;
-    background: #F5FAFC;
-    opacity: 0.6;
-    z-index: -1;
-   
-}
-.section-h2{
-    color: #6CB43F;
-    font-size: 30px;
-}
-.section-p, .section-p2{
-    color: #798296;
-    margin-left: -70px;
-    font-size: 14px;
-}
-.section-p{
-    margin-top: -5px;
-}
-.svg{
-    margin-top: -25px;
-    margin-left: 100px;
-}
-.section-p2{
-    margin-top: 20px;
-}
-.client-h3{
-    margin-top: 165px;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color:  #6CB43F;
-    text-align: center;
 
-}
-.client-div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.client-ul{
-    margin-top: 80px;
-    box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.1);
-    padding-top: 25px;
-    padding-right: 55px;
-    padding-bottom: 24px;
-    padding-left: 55px;
-}
-.paragraf{
-    text-align: center;
-    color: #00718E;
-    font-size: 13px;
-    margin-top: 10px;
-}
-.leftright2{
-    position: absolute;
-    display: flex;  
-    margin-left: 537px;
-    margin-top: 50px;
-}
 .footer{
     position: relative;
     margin-top:15%;
@@ -552,8 +578,6 @@ a:hover {
     .svg{
         display: none;
     }
-    .svg{
-        display: none;
     }
     .client-div{
         display: flex;
